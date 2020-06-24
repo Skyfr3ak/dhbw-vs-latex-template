@@ -48,12 +48,14 @@
     title-style/default/.estyle = {/udhbwvst/title-style-file = udhbwvst-title-default.def},
     font-size/.store in         = \udhbwvst@var@fontsize,
     font-size                   = 12pt,
-    abstract-file/.store in     = \udhbwvst@var@abstractfile
+    abstract-file/.store in     = \udhbwvst@var@abstractfile,
+    layout/.store in            = \udhbwvst@var@layout,
+    layout                      = oneside
 }
 
 \ProcessPgfOptions{/udhbwvst}
 
-\LoadClass[\udhbwvst@var@fontsize]{article}
+\LoadClass[\udhbwvst@var@fontsize,\udhbwvst@var@layout]{article}
 
 % load packages
 
